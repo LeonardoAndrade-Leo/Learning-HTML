@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Fonts</title>
+    <style>
+        @font-face {
+            font-family: 'Love' ;
+            src: url('fonts/love_story.ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*  Format types
+            - opentype (otf)
+            - true-type (ttf)
+            - embedded-opnetype
+            - truetype-aat (Apple advanced typography)
+            - Svg
+            */
+        }
+        @font-face {
+            font-family:'anja' ;
+            src: url('fonts/anjaeliana.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+           
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Love', Times, serif; /*If you want to use other types of fonts you can use the site "dafont" */
+            font-size: 3em;
+        }
+        p{
+           font-family: 'anja'
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Title</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, excepturi in ipsam consequuntur esse illum cupiditate animi non facere vero, laudantium exercitationem velit molestias delectus nostrum ex commodi dolor doloremque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, placeat. Architecto cum, provident iusto repellendus quae similique quasi placeat reiciendis doloremque! Aut vero tenetur repellat porro deleniti architecto provident voluptates!harum?Lorem
+    </p>
+</body>
+</html>
