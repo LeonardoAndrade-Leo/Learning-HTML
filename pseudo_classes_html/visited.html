@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover example</title>
+    <title>Visited</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-             background-color: rgb(213, 255, 128);
-        }
-        div > p{ /*Refers to the "child" of the div, so every paragraph inside the div is going to disapear*/
-            display: none; /*Hides the element*/
-        }
-        div:hover > p {
-            display: block; /*It the opposite of "display: none" makinf the content appear*/
-            color: white;
-            background-color: rgb(0, 86, 6);
-            text-align: center;
-            width: 300px;
-           
-        }
-        div:hover{
-            color:rgb(57, 150, 61);
-
-            font-weight: bolder;
+        /*
+        :  = pseudo-class
+        :: = pseudo-element
+        .  = class
+        #  = Id
+        >  = child
         
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(161, 209, 66);
         }
+
         h1 {
             text-align: center;
             background-color: rgb(1, 63, 7);
             color: white;
        
         }
-                a:visited{ /* This pseudo-class styles links the user has already visited */
-            color: rgb(0, 255, 68);
+        a:visited{ /* This pseudo-class styles links the user has already visited */
+            color: rgb(37, 104, 55);
           
         }
         a{
@@ -61,22 +54,19 @@
             content: '♦';
         }
         .special:hover{/*Here i created a class to make a separeted style for my Instagram*/
-            background-color: rgb(40, 130, 35);
+            background-color: aquamarine;
         }
+        
     </style>
 </head>
+
 <body>
-    <h1>Example of Hover</h1>
-    <div>
-        Hover the mouse here
-        <p>Hidden Text</p>
-    </div>
-       <h1>Example of Visited</h1>
+    <h1>Example of Visited</h1>
     <ul>
     <li><a href ="https://www.linkedin.com/in/leonardo-andrade-oliveira/"target="_blank">Linkedin</a></li>
         <li><a href="https://www.instagram.com/and_leoox/"target="_blank" class="special">Instagram</a></li>
         <li><a href="https://github.com/LeonardoAndrade-Leo"target="_blank">Github</a></li>
     </ul>
-  
 </body>
+
 </html>
