@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{    /*the '*' applies the style in the whole content*/
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(169, 241, 234);
+            text-align: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>My first Form</h1>
+    <form action="cadastro.php" method="post"> <!--This make an action when you submit the data, sending it to another programming language /// post make your website a little bit more secure-->
+      <fieldset> <!--Group the fields-->
+        <legend>Personal Data</legend> <!--gives a legend-->
+          
+          <p><label for="iname">Name: </label><input type="text" name="name" id="iname" size="15" placeholder="Your Name"> </p>  <!--We use input:text to make a box to write inside /// label is used to connect the name with the id iname, so they are connected-->
+          <p><label for="ilast">Last Name: </label><input type="text" name="last" id="ilast" size="15" placeholder="Your Last Name"></p>
+          <p><label for="iuser">User: </label><input type="text" name="user" id="iuser"size="15" placeholder="User Name" required maxlength="5"></p> <!--Required don't allow you submit until you fill the space, and requiered maxlength limits the data in only 5 characters-->
+          <p><label for="ipass">Password: </label><input type="password" name="pass" id="ipass"size="15" placeholder="Type your password" required minlength="5"></p> <!--Required don't allow you submit until you fill the space, and requiered minlength requires at least 5 characters-->
+          <p><label for="igrade">Avarage Grade: </label><input type="number" name="grade" id="igrade" min="0" max="10" placeholder="0 to 10" step="0.5"> </p> <!--input:number just allows numbers /// min and max limits the quantity of numbers //// step is in how much the numbers can increase-->
+          <p><label for="ibirthday">Birthday: </label><input type="month" name="birthday" id="ibirthday"></p>
+          <label for=""></label>
+          
+          <p><label for="ibirth">Birth: </label><input type="date" name="birth" id="ibirth"></p>
+          <p><label for="ihour">Birth Hour: </label> <input type="time" name="hour" id="ihour"></p>
+          <p><label for="iemail">E-mail: </label> <input type="email" name="E-mail" id="iemail" placeholder="Type your e-mail "></p>
+          <p><label for="itelephone">Phone: </label><input type="tel" name="phone" id="itelephone" placeholder="Numbers only"></p>
+          <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="idk" id="imale" > <label for="imale"> Male</label><br> <!--We got to choose the same name for the options inside the field, so we can unmark an aption-->
+            <input type="radio" name="idk" id="ifemale"> <label for="ifemale"> Female </label><br>
+            <input type="radio" name="idk" id="iidk"> <label for="iidk"> Don't Want to Answer </label><br>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Favorite Artists</legend>
+        <input type="checkbox" name="bey" id="ibey"> <label for="ibey">Beyoncé</label><br>
+        <input type="checkbox" name="Ade" id="iade"> <label for="iade">Adele</label><br>
+        <input type="checkbox" name="Rihanna" id="irihanna"> <label for="irihanna">Rihanna</label><br>
+    </fieldset>
+    <P>
+        <label for="istate">Estado</label>
+        <select name="state" id="istate"> <!--"Select" opens a box with some options-->
+         <optgroup label="Sudeste Area"><!--optgroup divides the options into categories-->
+             <option value="SP">São Paulo</option>
+             <option value="RJ">Rio de Janeiro</option>
+             <option value="MJ">Minas Gerais</option>
+         </optgroup>
+
+         <optgroup label = "Sul Area">
+            <option value="RS">Rio grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+        </optgroup>
+        </select>
+    </P>
+    <label for="imsg">Message:</label><br>
+    <textarea name="message" id="imsg" rows="4" cols="30"></textarea> <!--It allows the user to write-->
+
+
+        <p><input type="submit" value="Submit"> <input type="reset" value="Clean Form"></p> <!--We use input:submit to create a buttom to submit the data//// we use input:reset to clean all data-->
+
+
+
+    </form>
+
+</body>
+</html>
